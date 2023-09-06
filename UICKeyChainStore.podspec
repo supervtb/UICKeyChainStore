@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "kishikawa katsumi" => "kishikawakatsumi@mac.com" }
   s.source                = { :git => "https://github.com/supervtb/UICKeyChainStore.git", :tag => "v#{s.version}" }
-  s.social_media_url      = "https://twitter.com/k_katsumi"
 
   s.ios.deployment_target = "15.0"
   s.requires_arc          = true
