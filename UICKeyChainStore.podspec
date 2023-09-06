@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = "UICKeyChainStore"
-  s.version               = "2.2.2"
+  s.version               = "2.1.2"
   s.summary               = "UICKeyChainStore is a simple wrapper for Keychain that works on iOS and OS X. Makes using Keychain APIs as easy as NSUserDefaults."
   s.description           = <<-DESC
                             UICKeyChainStore is a simple wrapper for Keychain that works on iOS and OS X.
@@ -17,11 +17,10 @@ Pod::Spec.new do |s|
   s.homepage              = "https://github.com/kishikawakatsumi/UICKeyChainStore"
   s.license               = { :type => "MIT", :file => "LICENSE" }
   s.author                = { "kishikawa katsumi" => "kishikawakatsumi@mac.com" }
-  s.source       =  {
-    :git => 'https://github.com/supervtb/UICKeyChainStore.git',
-    :tag => 'v'+s.version.to_s
-  }
-  s.ios.deployment_target = "15.0"
+  s.source                = { :git => "https://github.com/supervtb/UICKeyChainStore.git", :tag => "v#{s.version}" }
+  s.social_media_url      = "https://twitter.com/k_katsumi"
+
+  s.ios.deployment_target = "11.0"
   s.requires_arc          = true
 
   s.source_files          = "Lib/UICKeyChainStore/*.{h,m}"
